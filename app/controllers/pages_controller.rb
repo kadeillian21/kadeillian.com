@@ -1,4 +1,9 @@
 class PagesController < ApplicationController
-  def index
+  def projects
+    render template: "pages/projects"
+  end
+
+  def resources
+    render template: "pages/resources"
   end
 end
