@@ -1,16 +1,94 @@
 <!DOCTYPE html>
-<html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
   <head>
     <title>Kade Illian</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "main"%>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="is-preload">
+	<!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"><strong>Kade Illian</strong></a>
+            <ul class="icons">
+              <li><a href="https://github.com/kadeillian21" class="icon brands fa-github"><span
+                    class="label">GitHub</span></a></li>
+              <li><a href="https://www.linkedin.com/in/kade-illian/" class="icon brands fa-linkedin"><span
+                    class="label">LinkedIn</span></a></li>
+              <li><a href="mailto:kadeillianmt@gmail.com" class="icon solid fa-envelope"><span
+                    class="label">Email</span></a></li>
+            </ul>
+          </header>
+      <%= yield %>
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="resources.html">Resources</a></li>
+            </ul>
+          </nav>
+
+          <!-- Section -->
+          <section>
+            <header class="major">
+              <h2>Contact Me</h2>
+            </header>
+            <ul class="contact">
+              <li class="icon solid fa-envelope"><a href="mailto:kadeillianmt@gmail.com">kadeillianmt@gmail.com</a></li>
+              <li class="icon solid fa-phone">(406) 920-9593</li>
+              <li class="icon solid fa-home">1873 Buckrake Avenue<br />
+                Bozeman, MT 59718</li>
+            </ul>
+            <p>You can contact me via any of the methods above, or you can reach out to me through the Github or LinkedIn
+              icons in the top-right portion of this page. I am generally available for a call between 3p.m. and 8p.m.
+              MST.
+            </p>
+          </section>
+
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a
+                href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+          </footer>
+
+        </div>
+      </div>
+    </div>
   </body>
+
+  	<!-- Scripts -->
+    <%= javascript_include_tag "jquery.min.js" %>
+    <%= javascript_include_tag "browser.min.js" %>
+    <%= javascript_include_tag "breakpoints.min.js" %>
+    <%= javascript_include_tag "util.js" %>
+    <%= javascript_include_tag "main.js" %>
+
 </html>
+
