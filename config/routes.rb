@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get "/resources" => "pages#resources"
   get "/index" => "pages#index"
   get "/blog" => "blogs#index"
+  get "/blog/signin" => "blogs#show"
 end
