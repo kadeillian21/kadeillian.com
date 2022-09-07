@@ -7,6 +7,4 @@
 //= link browser.min.js
 //= link main.js
 //= link util.js
-//= link fontawesome-all.min.css
-
 
