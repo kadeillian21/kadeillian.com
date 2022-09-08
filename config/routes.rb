@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   get "/projects" => "pages#projects"
   get "/resources" => "pages#resources"
   get "/index" => "pages#index"
-  get "/blog" => "blogs#index"
-  get "/blog/signin" => "blogs#show"
+  get "/blog" => "blogs#home"
+  get "/blog/all" => "blogs#index"
 end

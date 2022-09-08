@@ -1,49 +1,14 @@
-<!-- Main -->
-<div id="main">
-  <div class="inner">
-    <!-- Header -->
-    <header id="header">
-      <a href="index.html" class="logo"><strong>Kade Illian</strong></a>
-      <ul class="icons">
-        <li><a href="https://github.com/kadeillian21" class="icon brands fa-github"><span
-              class="label">GitHub</span></a></li>
-        <li><a href="https://www.linkedin.com/in/kade-illian/" class="icon brands fa-linkedin"><span
-              class="label">LinkedIn</span></a></li>
-        <li><a href="mailto:kadeillianmt@gmail.com" class="icon solid fa-envelope"><span
-              class="label">Email</span></a></li>
-      </ul>
-    </header>
+<p style="color: green"><%= notice %></p>
 
-    <!-- Content -->
-    <section>
-      <header class="main">
-        <h1>Blogs</h1>
-      </header>
+<h1>Blogs</h1>
 
-      <span class="image main"><img src="images/pic11.jpg" alt="" /></span>
-
-      <p>The purpose for the blogs section of my website is threefold.  One: to help the user learn about web development concepts from the perspective of a beginner.  Two: to demonstrate what skills I have been working on in my freetime.  Three: to document what I have been learning on a weekly basis as a progress in my web development journey.  I hope that you find these articles insightful and that they would even help you solve your own web development problems!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh
-        porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-        Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in
-        aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-        turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed
-        vehicula.</p>
-      <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
-        mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris,
-        consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit.
-        Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-
-      <hr class="major" />
-        <%= render @blogs[0] %>
-
-      <hr class="major" />
-        <%= render @blogs[1] %>
-
-      <hr class="major" />
-        <%= render @blogs[2] %>
-
-    </section>
-  </div>
+<div id="blogs">
+  <% @blogs.each do |blog| %>
+    <%= render blog %>
+    <p>
+      <%= link_to "Show this blog", blog %>
+    </p>
+  <% end %>
 </div>
+
+<%= link_to "New blog", new_blog_path %>
