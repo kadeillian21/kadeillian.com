@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "/index" => "pages#index"
   get "/blog" => "blogs#home"
   get "/blog/all" => "blogs#index"
+  get "/blog/:id" => "blogs#show"
 
   # Authentication
   post "/sessions" => "sessions#create"

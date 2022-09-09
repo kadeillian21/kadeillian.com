@@ -1,4 +1,4 @@
-<p style="color: green"><%= notice %></p>
+<<p style="color: green"><%= notice %></p>
 
 <h1>Blogs</h1>
 
@@ -6,9 +6,7 @@
   <% @blogs.each do |blog| %>
     <%= render blog %>
     <p>
-      <%= link_to "Show this blog", blog %>
+      <a href="blog/:id" class="button primary medium">View this Blog</a>
     </p>
   <% end %>
 </div>
-
-<%= link_to "New blog", new_blog_path %>

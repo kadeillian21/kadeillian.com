@@ -399,9 +399,9 @@ pre code {
 }
 
 hr {
-  border: 0;
   border-bottom: solid 1px rgba(210, 215, 217, 0.75);
   margin: 2em 0;
+  width: 100%;
 }
 
 hr.major {
