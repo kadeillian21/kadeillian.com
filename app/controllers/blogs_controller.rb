@@ -58,9 +58,6 @@ class BlogsController < ApplicationController
   end
 
   def home
-    @most_recent_blog = Blog.last
-    @second_most_recent_blog = Blog.second_to_last
-    @third_most_recent_blog = Blog.third_to_last
     render template: "blogs/home"
   end
 

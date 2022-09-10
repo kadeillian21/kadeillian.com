@@ -1,4 +1,7 @@
-<div id="<%= dom_id blog %>">
+      <header class="main">
+        <h1>Blogs</h1>
+      </header>
+
   <p>
     <strong>Title:</strong>
     <%= blog.title %>
@@ -9,15 +12,14 @@
     <%= blog.author %>
   </p>
 
-  <p>
-    <strong>Image url:</strong>
-    <%= blog.image_url %>
+  <p>    
+    <img class="blog-image" src= <%= blog.image_url %>>
   </p>
 
   <p>
-    <strong>Body:</strong>
     <%= blog.body %>
   </p>
-  
+      <p>
+      <a href="blog/:id" class="button primary medium">View this Blog</a>
+    </p>
 
-</div>

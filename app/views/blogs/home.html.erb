@@ -30,13 +30,13 @@
       </div>
       <hr class="major">
       <div class="col-4 col-12-medium">
-        <%= render @most_recent_blog %>
+        <%= render Blog.last %>
       </div>
       <div class="col-4 col-12-medium">
-        <%= render @second_most_recent_blog %>
+        <%= render Blog.second_to_last %>
       </div>
       <div class="col-4 col-12-medium">
-        <%= render @third_most_recent_blog %>
+        <%= render Blog.third_to_last %>
       </div>
     </section>
   </div>
