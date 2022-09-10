@@ -3671,3 +3671,23 @@ iframe {
   height: 969px;
   width: 50%;
 }
+
+.blog {
+  margin: 1em;
+  max-width: 30%;
+  height: 100%;
+}
+
+.blog h1 {
+  font-size: 2em;
+}
+
+.blog img {
+  max-width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+.center {
+  display: flex;
+}
