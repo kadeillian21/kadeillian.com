@@ -3691,3 +3691,7 @@ iframe {
 .center {
   display: flex;
 }
+
+#blogheader {
+  margin-top: 2%;
+}

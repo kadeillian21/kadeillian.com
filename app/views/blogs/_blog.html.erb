@@ -1,15 +1,13 @@
-<header class="main">
-  <h1><%= blog.title %></h1>
-</header>
-
-<p class="center">    
-  <img class="blog-image" src= <%= blog.image_url %>>
-</p>
-
-<p>
-  <%= blog.body %>
-</p>
-<p>
-  <a href="blog/:id" class="button primary medium">View this Blog</a>
-</p>
+<!-- Content -->
+<section>
+  <header id="blogheader">
+    <h1><%= blog.title %></h1>
+  </header>
+  <p class="center">    
+    <img class="blog-image" src= <%= blog.image_url %>>
+  </p>
+  <p>
+    <%= blog.body %>
+  </p>
+</section>
 

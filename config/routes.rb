@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :blogs, :pages
+  resources :pages
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "/index" => "pages#index"
   get "/blog" => "blogs#home"
   get "/blog/all" => "blogs#index"
+  get "/blog/:id" => "blogs#show"
 
   # Authentication
   post "/sessions" => "sessions#create"

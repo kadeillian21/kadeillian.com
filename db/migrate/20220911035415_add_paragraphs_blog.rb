@@ -1,0 +1,54 @@
+class AddParagraphsBlog < ActiveRecord::Migration[7.0]
+  def change
+    add_column :blogs, :p1, :text
+    add_column :blogs, :p2, :text
+    add_column :blogs, :p3, :text
+    add_column :blogs, :p4, :text
+    add_column :blogs, :p5, :text
+    add_column :blogs, :p6, :text
+    add_column :blogs, :p7, :text
+    add_column :blogs, :p8, :text
+    add_column :blogs, :p9, :text
+    add_column :blogs, :p10, :text
+    add_column :blogs, :p11, :text
+    add_column :blogs, :p12, :text
+    add_column :blogs, :p13, :text
+    add_column :blogs, :p14, :text
+    add_column :blogs, :p15, :text
+    add_column :blogs, :p16, :text
+    add_column :blogs, :p17, :text
+    add_column :blogs, :p18, :text
+    add_column :blogs, :p19, :text
+    add_column :blogs, :p20, :text
+    add_column :blogs, :p21, :text
+    add_column :blogs, :p22, :text
+    add_column :blogs, :p23, :text
+    add_column :blogs, :p24, :text
+    add_column :blogs, :p25, :text
+    add_column :blogs, :p26, :text
+    add_column :blogs, :p27, :text
+    add_column :blogs, :p28, :text
+    add_column :blogs, :p29, :text
+    add_column :blogs, :p30, :text
+    add_column :blogs, :p31, :text
+    add_column :blogs, :p32, :text
+    add_column :blogs, :p33, :text
+    add_column :blogs, :p34, :text
+    add_column :blogs, :p35, :text
+    add_column :blogs, :p36, :text
+    add_column :blogs, :p37, :text
+    add_column :blogs, :p38, :text
+    add_column :blogs, :p39, :text
+    add_column :blogs, :p40, :text
+    add_column :blogs, :image1, :text
+    add_column :blogs, :image2, :text
+    add_column :blogs, :image3, :text
+    add_column :blogs, :image4, :text
+    add_column :blogs, :image5, :text
+    add_column :blogs, :image6, :text
+    add_column :blogs, :image7, :text
+    add_column :blogs, :image8, :text
+    add_column :blogs, :image9, :text
+    add_column :blogs, :image10, :text
+  end
+end
