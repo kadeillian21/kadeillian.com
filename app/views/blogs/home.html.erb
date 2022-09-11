@@ -28,12 +28,15 @@
         <hr class="major">
         <div class="col-4 col-12-medium blog">
           <%= render Blog.last %>
+          <a href="blog/<%=Blog.last.id%>" class="button primary medium">View this Blog</a>
         </div>
         <div class="col-4 col-12-medium blog">
           <%= render Blog.second_to_last %>
+          <a href="blog/<%=Blog.second_to_last.id%>" class="button primary medium">View this Blog</a>
         </div>
         <div class="col-4 col-12-medium blog">
           <%= render Blog.third_to_last %>
+          <a href="blog/<%=Blog.third_to_last.id%>" class="button primary medium">View this Blog</a>
         </div>
     </section>
   </div>
