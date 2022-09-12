@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   post "/blog/create" => "blogs#create"
 
   # Authentication
-  post "/sessions" => "sessions#create"
+  get "sign_in" => "sessions#new"
+  post "sign_in" => "sessions#create"
 end

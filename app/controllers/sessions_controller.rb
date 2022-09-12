@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+  def new
+  end
+
   def create
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
@@ -10,9 +13,9 @@ class SessionsController < ApplicationController
         Rails.application.credentials.fetch(:secret_key_base), # the secret key
         "HS256" # the encryption algorithm
       )
-      render json: { jwt: jwt, email: user.email, user_id: user.id }, status: :created
+      render template: "blogs/home"
     else
-      render json: {}, status: :unauthorized
+      render json: { message: "You are not authorized to access this content." }, status: :unauthorized
     end
   end
 end
