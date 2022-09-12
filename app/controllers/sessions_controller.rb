@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
         Rails.application.credentials.fetch(:secret_key_base), # the secret key
         "HS256" # the encryption algorithm
       )
-      render template: "blogs/home"
+      redirect_to blog_path
     else
       render json: { message: "You are not authorized to access this content." }, status: :unauthorized
     end
