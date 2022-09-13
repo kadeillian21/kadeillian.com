@@ -13,7 +13,7 @@
       </ul>
     </header>
     <div id="blogs">
-      <%= render Blog.find_by(id: params["id"]) %>
+      <%= render @blog %>
     </div>
   </div>
 </div>

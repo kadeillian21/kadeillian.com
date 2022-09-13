@@ -1,0 +1,2 @@
+module BloghomesHelper
+end

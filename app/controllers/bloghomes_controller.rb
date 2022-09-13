@@ -1,0 +1,2 @@
+class BloghomesController < ApplicationController
+end
