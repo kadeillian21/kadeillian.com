@@ -98,53 +98,17 @@
 		<h2>What I am Learning</h2>
 	</header>
 	<div class="posts">
-		<article>
-			<h3>Interdum aenean</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
-				interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
+		<article class="blog">
+			<%= render Blog.last %>
+      <a href="blog/<%=Blog.last.id%>" class="button primary medium">View this Blog</a>
 		</article>
-		<article>
-			<h3>Nulla amet dolore</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
-				interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
+		<article class="blog">
+			<%= render Blog.second_to_last %>
+      <a href="blog/<%=Blog.second_to_last.id%>" class="button primary medium">View this Blog</a>
 		</article>
-		<article>
-			<h3>Tempus ullamcorper</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
-				interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<h3>Sed etiam facilis</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
-				interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<h3>Feugiat lorem aenean</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
-				interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<h3>Amet varius aliquam</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante
-				interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
+		<article class="blog">
+			<%= render Blog.third_to_last %>
+      <a href="blog/<%=Blog.third_to_last.id%>" class="button primary medium">View this Blog</a>
 		</article>
 	</div>
 </section>
