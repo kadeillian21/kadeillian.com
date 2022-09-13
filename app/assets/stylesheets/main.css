@@ -1895,12 +1895,12 @@ header p {
 header.major> :last-child {
   border-bottom: solid 3px navy;
   display: inline-block;
-  margin: 2em 0 2em 0;
+  margin: 0.5em 0 2em 0;
   padding: 0 0.75em 0.5em 0;
 }
 
 header.main> :last-child {
-  margin: 0em 0 1em 0;
+  margin: 1em 0 1em 0;
 }
 
 /* Form */
@@ -3444,7 +3444,7 @@ button:disabled,
 
 /* Banner */
 #banner {
-  padding: 6em 0 4em 0;
+  padding-top: 6em;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -3699,4 +3699,11 @@ iframe {
 
 #sign-in-space {
   margin-top: 2em;
+}
+
+#references {
+  border-bottom: solid 3px navy;
+  display: inline-block;
+  margin: 1em 0 1em 0;
+  padding: 0 0.75em 0.5em 0;
 }
