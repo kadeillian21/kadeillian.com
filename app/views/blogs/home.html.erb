@@ -23,20 +23,20 @@
         <h3>Why Write a Blog?</h3>
         <p>Writing a blog was the core idea behind creating <a href="<%= root_path %>">kadeillian.com</a>.  I wanted to be able to showcase my trials and my achievements to the world as I embarked on my web devlopment journey.  Furthermore, I wanted to be able to help other junior developers by presenting common material in a new light.  I believe that sharing not only your accomplishments, but also your failures is an important part of any responsible web developers journey as it encourages more junior developers as they try to start their own devlopment journey.</p>
         <p>I am also writing this blog to showcase not only who Kade Illian is as a web developer, but also as a person who has his own hobbies, life experiences, and other contributing factors that has led me to career that I am in today.  I hope that these more personal blogs can help new developers relate to someone who is already in the field, but I also hope to show potential employers why I would be a great fit in any team development setting.  If you have any questions, comments, or blog post ideas, feel free to reach out to me through any of the contact means located in the top-right portion of this page or on the left-side navbar.  Enjoy!</p>
-        <a href="blog/all" class="button primary large">View All Blogs</a>
+        <a href="blogs" class="button primary large">View All Blogs</a>
         <hr class="major">
         <div class="posts">
           <article class="blog">
             <%= render Blog.last %>
-            <a href="blog/<%=Blog.last.id%>" class="button primary medium">View this Blog</a>
+            <a href="blogs/<%=Blog.last.id%>" class="button primary medium">View this Blog</a>
           </article>
           <article class="blog">
             <%= render Blog.second_to_last %>
-            <a href="blog/<%=Blog.second_to_last.id%>" class="button primary medium">View this Blog</a>
+            <a href="blogs/<%=Blog.second_to_last.id%>" class="button primary medium">View this Blog</a>
           </article>
           <article class="blog">
             <%= render Blog.third_to_last %>
-            <a href="blog/<%=Blog.third_to_last.id%>" class="button primary medium">View this Blog</a>
+            <a href="blogs/<%=Blog.third_to_last.id%>" class="button primary medium">View this Blog</a>
           </article>
         </div>  
       </div>

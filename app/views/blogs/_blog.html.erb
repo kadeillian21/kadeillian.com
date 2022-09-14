@@ -7,7 +7,7 @@
     <img class="blog-image" src= <%= blog.image_url %>>
   </p>
   <p>
-    <%= blog.body %>
+    <%= blog.body.html_safe %>
   </p>
 </section>
 

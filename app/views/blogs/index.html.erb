@@ -15,7 +15,7 @@
     <div id="blogs">
       <% @blogs.each do |blog| %>
         <%= render blog %>
-                  <a href="<%=blog.id%>" class="button primary medium">View this Blog</a>
+                  <a href="blogs/<%=blog.id%>" class="button primary medium">View this Blog</a>
       <% end %>
     </div>
   </div>
