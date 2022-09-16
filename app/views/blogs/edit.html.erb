@@ -15,6 +15,7 @@
     <h1>Editing blog</h1>
     <div id="blogs">
       <%= render "form", blog: @blog %>
+      <%= button_to "Destroy this blog", @blog, method: :delete %>
     </div>
   </div>
 </div>
