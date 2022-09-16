@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "/blog" => "blogs#home"
 
   # Authentication
-  get "sign_in" => "sessions#new"
-  post "sign_in" => "sessions#create"
+  get "/login" => "sessions#new"
+  post "/sessions" => "sessions#create"
+  get "/logout" => "sessions#destroy"
 end

@@ -1,21 +1,20 @@
 class SessionsController < ApplicationController
   def new
+    render template: "sessions/new"
   end
 
   def create
     user = User.find_by(email: params[:email])
     if user && user.authenticate(params[:password])
-      jwt = JWT.encode(
-        {
-          user_id: user.id, # the data to encode
-          exp: 24.hours.from_now.to_i, # the expiration time
-        },
-        Rails.application.credentials.fetch(:secret_key_base), # the secret key
-        "HS256" # the encryption algorithm
-      )
-      redirect_to blog_path
+      session[:user_id] = user.id
+      redirect_to "/"
     else
-      render json: { message: "You are not authorized to access this content." }, status: :unauthorized
+      redirect_to "/login"
     end
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to "/login"
   end
 end

@@ -14,15 +14,19 @@
       </ul>
     </header>
     
-    <h1>Sign In</h1>
-    <%= form_with url: sign_in_path do |form| %>
-      <%= form.label "email" %>
-      <%= form.email_field :email %>
-      <%= form.label "password" %>
-      <%= form.password_field :password %>
-      <div id="sign-in-space">
-        <%= form.submit "Sign In" %>
+    <h1>Login</h1>
+    <%= form_with method: "post", url: "/sessions" do |form| %>
+      <div>
+        <%= form.label :email %>
+        <%= form.email_field :email %>
       </div>
-    <% end %>
+      <div>
+        <%= form.label :password %>
+        <%= form.password_field :password %>
+      </div>
+      <div>
+        <%= form.submit "Submit" %>
+      </div>
+    <% end%>
   </div>
 </div>
