@@ -1,13 +1,15 @@
 <!-- Content -->
 <section>
-  <header id="blogheader">
+  <header class="center" id="blogheader">
     <h1><%= blog.title %></h1>
   </header>
-  <p>Published on: <%= blog.created_at.strftime('%B %d, %Y') %></p>
+  <p class="center">Published on: <%= blog.created_at.strftime('%B %d, %Y') %></p>
   <p class="center">    
     <img class="blog-image" src= <%= blog.image_url %>>
   </p>
   <p>
     <%= blog.body.html_safe %>
   </p>
+  <a href="<%= blog.id.pred  unless blog.id == 1 %>" class="button">Previous</a>
+  <a class="button" href="<%= blog.id.succ unless blog.id == 5 %>" class="button">Next</a> <!--Need to figure out how to do a nil check-->
 </section>

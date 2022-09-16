@@ -3691,6 +3691,12 @@ iframe {
 
 .center {
   display: flex;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  justify-content: end;
 }
 
 #blogheader {
