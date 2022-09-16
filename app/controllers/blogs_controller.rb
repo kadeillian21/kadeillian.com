@@ -62,6 +62,9 @@ class BlogsController < ApplicationController
   end
 
   def home
+    @last = Blog.last
+    @second_to_last = Blog.second_to_last
+    @third_to_last = Blog.third_to_last
     render template: "blogs/home"
   end
 

@@ -1,0 +1,11 @@
+  <header id="blogheader">
+    <h1><%= @last.title %></h1>
+  </header>
+  <p>Published on: <%= @last.created_at.strftime('%B %d, %Y') %></p>
+  <p class="center">    
+    <img class="blog-image" src= <%= @last.image_url %>>
+  </p>
+  <%= @last.preview_last %>
+  <br>
+  <br>
+  <a href="blogs/<%= @third_to_last.id %>" class="button primary medium">View this Blog</a>
