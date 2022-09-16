@@ -19,6 +19,8 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1/edit
   def edit
+    @blog = Blog.find_by(id: params[:id])
+    render template: "blogs/edit"
   end
 
   # POST /blogs or /blogs.json

@@ -9,10 +9,6 @@ Rails.application.routes.draw do
   get "/resources" => "pages#resources"
   get "/index" => "pages#index"
   get "/blog" => "blogs#home"
-  # get "/blog/all" => "blogs#index"
-  # get "/blog/new" => "blogs#new"
-  # post "/blog/create" => "blogs#create"
-  # get "/blog/:id" => "blogs#show"
 
   # Authentication
   get "sign_in" => "sessions#new"
