@@ -2,7 +2,8 @@
 lock "~> 3.17.1"
 
 set :application, "kadeillian.com"
-set :repo_url, "git@github.com:kadeillian21/kadeillian.com.git"
+set :repo_url, "https://github.com/kadeillian21/kadeillian.com.git"
+set :branch, "main"
 
 # Deploy to the user's home directory
 set :deploy_to, "/home/deploy/#{fetch :application}"
