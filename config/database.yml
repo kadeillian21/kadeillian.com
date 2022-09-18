@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: kadeillian
+  database: kadeillian_com_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: kadeillian_com_production
-  username: kadeillian_com
-  password: <%= ENV["KADEILLIAN_COM_DATABASE_PASSWORD"] %>
+  database: kadeillian
+  username: deploy
+  password: <%= ENV["KADEILLIAN_DATABASE_PASSWORD"] %>
