@@ -10,6 +10,4 @@
   <p>
     <%= blog.body.html_safe %>
   </p>
-  <a href="<%= blog.id.pred  unless blog.id == 1 %>" class="button">Previous</a>
-  <a class="button" href="<%= blog.id.succ unless blog.id == 5 %>" class="button">Next</a> <!--Need to figure out how to do a nil check-->
 </section>
