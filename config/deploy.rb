@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.17.1"
 
-set :application, "kadeilliancom"
+set :application, "kadeillian"
 set :repo_url, "https://github.com/kadeillian21/kadeillian.com.git"
 set :branch, "main"
 
