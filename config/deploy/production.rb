@@ -27,7 +27,7 @@ server "191.101.1.83", user: "deploy", roles: %w{app db web}
 # For available Capistrano configuration variables see the documentation page.
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
-config.assets.debug = true
+
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
