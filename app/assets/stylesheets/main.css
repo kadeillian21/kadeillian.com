@@ -3647,8 +3647,7 @@ button:disabled,
 
 iframe {
   background-color: navy;
-  height: 969px;
-  width: 50%;
+  width: 100%;
 }
 
 .blog {
