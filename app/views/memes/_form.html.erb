@@ -1,0 +1,22 @@
+<%= form_with(model: meme) do |form| %>
+  <% if meme.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(meme.errors.count, "error") %> prohibited this meme from being saved:</h2>
+
+      <ul>
+        <% meme.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :image_url, style: "display: block" %>
+    <%= form.text_area :image_url %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
