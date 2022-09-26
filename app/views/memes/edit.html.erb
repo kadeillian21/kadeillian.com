@@ -20,6 +20,7 @@
 
     <div>
       <%= link_to "Show this meme", @meme %> |
+      <%= button_to "Destroy this meme", @meme, method: :delete %>
       <%= link_to "Back to memes", memes_path %>
     </div>
   </div>
