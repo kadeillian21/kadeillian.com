@@ -1,14 +1,28 @@
-<p style="color: green"><%= notice %></p>
+<div id="main">
+  <div class="inner">
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="logo"><strong>Kade Illian</strong></a>
+      <ul class="icons">
+        <li><a href="https://github.com/kadeillian21" class="icon brands fa-github"><span
+              class="label">GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/kade-illian/" class="icon brands fa-linkedin"><span
+              class="label">LinkedIn</span></a></li>
+        <li><a href="mailto:kadeillianmt@gmail.com" class="icon solid fa-envelope"><span
+              class="label">Email</span></a></li>
+      </ul>
+    </header>
+    <p style="color: green"><%= notice %></p>
 
-<h1>Memes</h1>
+    <h1>Memes</h1>
 
-<div id="memes">
-  <% @memes.each do |meme| %>
-    <%= render meme %>
-    <p>
-      <%= link_to "Show this meme", meme %>
-    </p>
-  <% end %>
+    <div id="memes">
+      <% @memes.each do |meme| %>
+        <%= render meme %>
+        <p>
+          <%= link_to "Show this meme", meme %>
+        </p>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-<%= link_to "New meme", new_meme_path %>
