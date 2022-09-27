@@ -17,5 +17,3 @@ module BlogsHelper
     end
   end
 end
-
-d
