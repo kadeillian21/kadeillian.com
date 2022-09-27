@@ -16,9 +16,9 @@
 
     <h1>Memes</h1>
 
-    <div id="memes">
+    <div class="wrap-grid">
       <% @memes.each do |meme| %>
-        <%= render meme %>
+        <div> <%= meme.image_url %> </div>
       <% end %>
     </div>
   </div>
