@@ -3681,9 +3681,14 @@ iframe {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
 .item {
   max-width: 10%;
   max-height: 10%;
+}
+
+.blog-image {
+  max-width: 70%;
 }
 
 #blogheader {
