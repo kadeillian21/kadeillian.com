@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
   
   def index
-    @last = Blog.last
-    @second_to_last = Blog.second_to_last
-    @third_to_last = Blog.third_to_last
+    @last = Blog.last.preview_paragraph
+    @second_to_last = Blog.second_to_last.preview_paragraph
+    @third_to_last = Blog.third_to_last.preview_paragraph
   end
   
   def projects

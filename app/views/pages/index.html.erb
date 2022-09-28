@@ -88,16 +88,13 @@
 	</header>
 	<div class="posts">
 		<article class="blog">
-			<%= render Blog.last %>
-      <a href="blogs/<%=Blog.last.id%>" class="button primary medium">View this Blog</a>
+			<%= render "last" %>
 		</article>
 		<article class="blog">
-			<%= render Blog.second_to_last %>
-      <a href="blogs/<%=Blog.second_to_last.id%>" class="button primary medium">View this Blog</a>
+			<%= render "second_to_last" %>
 		</article>
 		<article class="blog">
-			<%= render Blog.third_to_last %>
-      <a href="blogs/<%=Blog.third_to_last.id%>" class="button primary medium">View this Blog</a>
+			<%= render "third_to_last" %>
 		</article>
 	</div>
 </section>
