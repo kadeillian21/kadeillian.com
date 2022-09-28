@@ -1,7 +1,7 @@
 module BlogsHelper
-  def last_page
+  def previous_page
     if @blog.id != Blog.first.id
-      blog = Blog.where("id < ?", params[:id])
+      blog = Blog.select(:id).where("id < ?", params[:id])
       blog.last.id
     else
       blogs_path
@@ -10,7 +10,7 @@ module BlogsHelper
 
   def next_page
     if @blog.id != Blog.last.id
-      blog = Blog.where("id > ?", params[:id])
+      blog = Blog.select(:id).where("id > ?", params[:id])
       blog.first.id
     else
       blogs_path
