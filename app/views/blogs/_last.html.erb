@@ -5,7 +5,7 @@
   <p class="center">    
     <img class="blog-image" src= <%= @last.image_url %>>
   </p>
-  <%= @last.html_safe %>
+  <%= @last.body.html_safe %>
   <br>
   <br>
   <a href="blogs/<%= @last.id %>" class="button primary medium">View this Blog</a>
