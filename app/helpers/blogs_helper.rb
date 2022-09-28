@@ -16,9 +16,4 @@ module BlogsHelper
       blogs_path
     end
   end
-
-  def preview_blog
-    fivehundred = body[0, 500]
-    return "#{fivehundred}..."
-  end
 end
