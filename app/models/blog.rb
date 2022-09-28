@@ -1,6 +1,6 @@
 class Blog < ApplicationRecord
-  def preview_blog
-    fivehundred = body[0, 700]
-    return "#{fivehundred}..."
+  def preview_paragraph
+    split = body.split("</p>")
+    split[0]
   end
 end
