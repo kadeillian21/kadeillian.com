@@ -16,9 +16,11 @@
 
     <h1>Memes</h1>
 
-    <div class="wrap-grid">
+    <div class="row" id="gallery">
       <% @memes.each do |meme| %>
-        <div> <%= meme.image_url %> </div>
+         <div class="col-12 col-sm-6 col-lg-3">
+          <img class="w=100" src="<%= meme.image_url %>"> 
+        </div>
       <% end %>
     </div>
   </div>
