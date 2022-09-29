@@ -29,15 +29,3 @@
 #   image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUP6xW6bHBl-Qk4a97DXP5_FWQDJX-dei9g&usqp=CAU",
 #   body: "<p>lorem ipsum kjlasfda ;asdkmc;a jkbfajksdf kade asdixcnmls sair a asdkopc asdkam dodj;,f diaxc edf asdoasjlmc asoidjqkldknasdlk oiasjda sdlmasdm ada oidflk c lm,as adiofa jksd lmnasdlk adio af laldflkn afdoia iofnklafl afioa ifa ksfdalskn faiosf oiasij</p> <p>faspif askfcnkl avioj ascvp asfpj a m;gfkj ascij0 asdfawf; noasdjfnopaiw dfpoawd flams;df lasdo f;asi9 fao;flmasf adfioa fef spfoi asdjo kfas;afkl;n asdfh9 asfaew fae auhf aklenmlafw pfaih alf;af afihpeof oej;aiuoe af9 phia;ael faio au9w ekj;afejklfeauihaf w9pa njoej nafsjliasoif ;awjfelaiewif faelj aeiofaeuhoaeioukn ljkasdjk asdjklf haiuhf awiouh fhiajk jalsljhi afiohup fihuwe jeff;jnkl sjau afd</p>",
 # )
-
-# User.create(
-#   name: "Kade Illian",
-#   email: "kadeillianmt@gmail.com",
-#   password_digest: "Actualize21!",
-# )
-
-User.create(
-  name: "Kade Illian",
-  email: "kadeillianmt@gmail.com",
-  password_digest: "password",
-)
