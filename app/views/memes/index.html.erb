@@ -19,9 +19,7 @@
     <div class="container">
       <div class="grid-row">
         <% @memes.each do |meme| %>
-          <div class="grid-item">
-            <img src="<%= meme.image_url %>">
-          </div>
+            <img class="test" src="<%= meme.image_url %>">
         <% end %>
       </div>
     </div>
