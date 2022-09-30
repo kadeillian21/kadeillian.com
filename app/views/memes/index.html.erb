@@ -16,12 +16,14 @@
 
     <h1>Memes</h1>
 
-    <div class="row" id="gallery">
-      <% @memes.each do |meme| %>
-         <div class="col-12 col-sm-6 col-lg-3">
-          <img class="w=100" src="<%= meme.image_url %>"> 
-        </div>
-      <% end %>
+    <div class="container">
+      <div class="grid-row">
+        <% @memes.each do |meme| %>
+          <div class="grid-item">
+            <img src="<%= meme.image_url %>">
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

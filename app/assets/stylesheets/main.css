@@ -3695,3 +3695,7 @@ iframe {
   margin: 1em 0 1em 0;
   padding: 0 0.75em 0.5em 0;
 }
+
+.grid-item {
+  height: 50px;
+}
