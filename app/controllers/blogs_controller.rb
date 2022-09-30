@@ -18,8 +18,6 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1/edit
   def edit
-    @blog = Blog.find_by(id: params[:id])
-    render template: "blogs/edit"
   end
 
   # POST /blogs or /blogs.json
@@ -76,6 +74,6 @@ class BlogsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def blog_params
-    params.require(:blog).permit(:title, :author, :image_url, :body)
+    params.require(:blog).permit(:title, :author, :slug, :image_url, :body)
   end
 end
