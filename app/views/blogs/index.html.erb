@@ -16,6 +16,8 @@
       <% @blogs.reverse.each do |blog| %>
         <%= render blog %>
           <a href="blogs/<%=blog.slug%>" class="button primary medium">View this Blog</a>
+          <br>
+          <br>
       <% end %>
     </div>
   </div>
