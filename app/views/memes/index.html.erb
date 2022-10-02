@@ -16,12 +16,11 @@
 
     <h1>Memes</h1>
 
-    <div class="container">
-      <div class="grid-row">
+
         <% @memes.each do |meme| %>
-            <img class="test" src="<%= meme.image_url %>">
+          <div class="test">
+            <%= image_tag asset_path(meme.image_url), class: "test2" %>
+          </div>
         <% end %>
-      </div>
-    </div>
   </div>
 </div>
