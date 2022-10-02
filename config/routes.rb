@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :memes
   resources :pages, :blogs
-  resources :users, except: [ :index, :show ]
+  resources :users, except: [ :index ]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

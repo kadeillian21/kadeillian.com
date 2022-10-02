@@ -1,0 +1,27 @@
+<!-- Main -->
+<div id="main">
+  <div class="inner">
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="logo"><strong>Kade Illian</strong></a>
+      <ul class="icons">
+        <li><a href="https://github.com/kadeillian21" class="icon brands fa-github"><span
+              class="label">GitHub</span></a></li>
+        <li><a href="https://www.linkedin.com/in/kade-illian/" class="icon brands fa-linkedin"><span
+              class="label">LinkedIn</span></a></li>
+        <li><a href="mailto:kadeillianmt@gmail.com" class="icon solid fa-envelope"><span
+              class="label">Email</span></a></li>
+      </ul>
+    </header>
+    <p style="color: green"><%= notice %></p>
+
+    <%= render @user %>
+
+    <div>
+      <%= link_to "Back to Homepage", root_path %>
+      <%= edit_user(@user) %>
+
+      <%= destroy_user(@user) %>
+    </div>
+  </div>
+</div>
