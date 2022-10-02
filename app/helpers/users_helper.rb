@@ -7,7 +7,7 @@ module UsersHelper
 
   def edit_user(user)
     if user == current_user
-      link_to "Edit this user", edit_user_path(user)
+      return edit_user_path(user)
     end
   end
 end

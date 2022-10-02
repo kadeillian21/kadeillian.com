@@ -19,9 +19,13 @@
 
     <div>
       <%= link_to "Back to Homepage", root_path %>
-      <%= edit_user(@user) %>
-
+      <br>
+      <br>
+      <a href="<%= edit_user(@user) %>" class="button primary medium">Edit User</a>
+      <br>
+      <br>
       <%= destroy_user(@user) %>
+      <a href="<%= logout_path %>" class="button primary medium">Logout</a>
     </div>
   </div>
 </div>
