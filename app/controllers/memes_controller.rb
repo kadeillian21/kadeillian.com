@@ -1,6 +1,6 @@
 class MemesController < ApplicationController
   before_action :set_meme, only: %i[ show edit update destroy ]
-  before_action :authenticate_user, except: [:index, :show ]
+  before_action :authenticate_admin, except: [:index, :show ]
 
 
   # GET /memes or /memes.json
