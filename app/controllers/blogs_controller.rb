@@ -9,6 +9,17 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1 or /blogs/1.json
   def show
+    @comment = @blog.comments.new(blog: @blog)
+
+    respond_to do |format|
+      if @comment.save
+        format.html { redirect_to comment_url(@comment), notice: "Comment was successfully created." }
+        format.json { render :show, status: :created, location: @comment }
+      else
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @comment.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   # GET /blogs/new
@@ -75,5 +86,9 @@ class BlogsController < ApplicationController
   # Only allow a list of trusted parameters through.
   def blog_params
     params.require(:blog).permit(:title, :author, :slug, :image_url, :body)
+  end
+
+  def comment_params
+    params.require(:comment).permit(:commenter, :body, :status)
   end
 end

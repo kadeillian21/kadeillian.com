@@ -50,7 +50,8 @@ gem 'friendly_id', '~> 5.4.0'
 # Use Sass to process CSS
 # gem "sassc-rails"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem 'shrine', '~> 3.3'
+gem 'image_processing', '~> 1.12', '>= 1.12.1'
 
 gem 'capistrano', '~> 3.12'
 gem 'capistrano-rails', '~> 1.4'

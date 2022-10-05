@@ -14,6 +14,19 @@
     </header>
     <div id="blogs">
       <%= render @blog %>
+      <div class="card my-1">
+        <div class="card-body">
+          <p class="font-weight-bold">Comments</p>
+          <%= form_with(model: [@blog, @blog.comments.build]) do |f| %>
+            <div class="form-group">
+              <%= f.label 'New comment' %>
+              <%= f.text_area :body, class: 'form-control' %>
+            </div>
+            <%= f.submit 'Submit', class: 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
+      <%= render @blog.comments %>
       <a href="<%= previous_page %>" class="button">Previous</a>
       <a class="button" href="<%= next_page %>">Next</a>
       <br>

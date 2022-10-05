@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  resources :comments
   resources :memes
-  resources :pages, :blogs
+  resources :pages
+  resources :blogs do
+    resources :comments
+  end
   resources :users, except: [ :index ]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
